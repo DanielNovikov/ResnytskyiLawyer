@@ -1,0 +1,201 @@
+﻿<div class="lawyer-details-container">
+    <div
+        class="lawyer-details-tabs"
+        id="tabs"
+        uk-switcher="animation: uk-animation-fade; toggle: > *; connect: #pages">
+
+        <div class="tab-button-wrapper">
+            <button class="uk-button uk-button-default tab-button" type="button">Главная</button>
+        </div>
+        <div class="tab-button-wrapper">
+            <button class="uk-button uk-button-default tab-button" type="button">Подробнее</button>
+        </div>
+        <div class="tab-button-wrapper">
+            <button class="uk-button uk-button-default tab-button last-tab-button" type="button">Контакты</button>
+        </div>
+    </div>
+
+    <div class="lawyer-info-container">
+        <ul class="lawyer-info-pages uk-switcher" id="pages">
+            <li class="lawyer-info">
+                <p class="name">Ресницкий Вячеслав Ульянович</p>
+                <p class="abbreviated-information">адвокат Украины и Российской Федерации</p>
+
+                <p class="specialization">Специализация</p>
+                <ul>
+                    <li>возврат вкладчикам денежных средств, находящихся в государственных банках Украины</li>
+                    <li>
+                        восстановление положения лиц, существовавшее до лишения их права собственности на
+                        недвижимость в Крыму в результате «рейдерства» или «национализации»
+                    </li>
+                </ul>
+
+                <button class="uk-button uk-button-secondary consultation-button"
+                        uk-toggle="target: .consultation-modal">
+                    Записаться на консультацию
+                </button>
+            </li>
+
+            <li class="lawyer-description">
+                <ul uk-accordion>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title description-title" href="#">Основное</a>
+                        <div class="uk-accordion-content">
+                            <span class="description margin-line">Интересы крымчан представляет в судах и государственных органах Украины, а представительство лиц материковой Украины осуществляет в государственных органах и судах Российской Федерации.</span>
+                            <span class="description margin-line">Свою адвокатскую деятельность осуществляет как в России, так и в Украине.</span>
+                            <span class="description margin-line">С 2014 года работает адвокатом самостоятельно.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title description-title" href="#">Достижения</a>
+                        <div class="uk-accordion-content">
+                            <ul>
+                                <li class="description">
+                                    крымским вкладчикам возращены вклады на сумму более 1,5 млн.
+                                    дол. США
+                                </li>
+                                <li class="description">
+                                    восстановлено право собственников на отель в Ялте и
+                                    земельный участок санатория в Алупке
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title description-title" href="#">Образование</a>
+                        <div class="uk-accordion-content">
+                            <p class="description">
+                                Имеет очное высшее юридическое образование, работал следователем,
+                                юристом банка и санатория, возглавлял адвокатскую компанию.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="lawyer-contacts-page">
+                <div class="lawyer-contacts">
+                    <p class="uk-text-bold uk-text-large">Украина</p>
+                    <span class="uk-text-normal uk-text-normal">Номер: </span>
+                    <span
+                        class="uk-text-normal uk-text-light">
+                        +38(050)397-47-20
+                    </span>
+                    <br/>
+                    <span class="uk-text-normal uk-text-normal">Email: </span>
+                    <span
+                        class="uk-text-normal uk-text-light">
+                        snitm@ukr.net
+                    </span>
+                    <br/>
+                    <span class="uk-text-normal uk-text-normal">Почтовый адрес: </span>
+                    <span
+                        class="uk-text-normal uk-text-light">
+                        01001, г. Киев, Главпочтамт, а/я 9
+                    </span>
+
+                    <br/>
+
+                    <p class="uk-text-bold uk-text-large russian-contact">Российская Федерация</p>
+                    <span class="uk-text-normal uk-text-normal">Номер: </span>
+                    <span
+                        class="uk-text-normal uk-text-light">
+                        +7(978)802-81-17
+                    </span>
+                    <br/>
+                    <span class="uk-text-normal uk-text-normal">Email: </span>
+                    <span
+                        class="uk-text-normal uk-text-light">
+                        snit@inbox.ru
+                    </span>
+                    <br/>
+                    <span class="uk-text-normal uk-text-normal">Почтовый адрес: </span>
+                    <span
+                        class="uk-text-normal uk-text-light">
+                        98600, Крым, г. Ялта, Главпочтамт, а/я 366
+                    </span>
+
+                    <hr/>
+
+                    <div class="developer">
+                        <p class="uk-text-bold uk-text-normal">Разработчик и дизайнер</p>
+                        <span class="uk-text-normal uk-text-normal">Номер: </span>
+                        <span
+                            class="uk-text-normal uk-text-light">
+                            +38(066)442-39-33
+                        </span>
+                        <br/>
+                        <span class="uk-text-normal uk-text-normal">Email: </span>
+                        <span
+                            class="uk-text-normal uk-text-light">
+                            danil.novikov.dev@gmail.com
+                        </span>
+                        <br/>
+                        <span class="uk-text-normal uk-text-normal">Telegram: </span>
+                        <span
+                            class="uk-text-normal uk-text-light">
+                            <text>@@DanyloNovikov</text>
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="uk-flex-top consultation-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <p class="uk-modal-title consultation-modal-title">Консультация (бесплатно)</p>
+
+        <div class="uk-margin">
+            <select class="uk-select" id="phonePrefix">
+                <option value="+380">+380</option>
+                <option value="+7">+7</option>
+            </select>
+            <input class="uk-input" type="number" placeholder="Номер телефона" id="phoneNumber">
+        </div>
+
+        <div class="uk-margin">
+            <textarea class="uk-textarea" rows="5" placeholder="Описание" id="description"></textarea>
+        </div>
+
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-secondary consultation-button uk-modal-close"
+                    onclick="leaveApplication()">
+                Перезвонить мне
+            </button>
+        </p>
+    </div>
+</div>
+
+
+<script>
+    function leaveApplication() {
+        let phonePrefix = document.getElementById('phonePrefix').value;
+
+        let phoneNumber = document.getElementById('phoneNumber').value;
+        document.getElementById('phoneNumber').value = '';
+
+        let description = document.getElementById('description').value;
+        document.getElementById('description').value = '';
+
+        let request = {
+            phone: phonePrefix + phoneNumber,
+            description: description
+        };
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", 'Application', true);
+
+        xhr.setRequestHeader("Content-type", "application/json");
+        let json = JSON.stringify(request);
+
+        xhr.send(json);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        let component = document.getElementById('tabs');
+    
+        UIkit.switcher(component, null);
+    });
+</script>

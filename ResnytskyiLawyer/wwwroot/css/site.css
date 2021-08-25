@@ -1,0 +1,822 @@
+﻿html {
+    line-height: normal;
+}
+
+.container {
+    background-image: url(../images/background.png);
+    width: calc(100vw - 70px);
+    height: 100vh;
+    padding: 0 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container > .lawyer-details-container {
+    width: 750px;
+    height: 420px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.container > .lawyer-details-container > .lawyer-details-tabs {
+    height: 47px;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper {
+    display: inline;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+.container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
+    height: 100%;
+    clip-path: polygon(85% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+    width: 150px;
+    float: left;
+    margin-right: 4px;
+    transition: all 0.3s ease 0s;
+}
+
+.container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .last-tab-button {
+    margin: 0 !important;
+}
+
+.container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button {
+    font-weight: 600;
+    color: #222;
+    border-bottom: 1px solid #444;
+    transition: all 0.3s ease 0s;
+}
+
+.container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button:hover {
+    color: rgb(251, 251, 251);
+}
+
+.container > .lawyer-details-container > .lawyer-info-container {
+    width: 100%;
+    height: calc(100% - 47px);
+    float: left;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages {
+    height: calc(100% - 80px);
+    padding: 40px 60px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
+    color: #404040;
+    font-size: 1.7rem;
+    font-family: 'Nunito', sans-serif;
+    margin: 0
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .abbreviated-information {
+    color: #737373;
+    font-size: 0.9rem;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    font-weight: 600;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .specialization {
+    color: rgb(30, 30, 30);
+    margin: 18px 0 3px 0;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > ul > li {
+    font-size: 15px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .consultation-button {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page {
+    height: 100%;
+    width: 100%;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts {
+    position: relative;
+    top: 50%;
+    transform: translateY(-51%);
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .russian-contact {
+    margin-top: 10px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > p {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > span {
+    font-size: 15px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > hr {
+    margin-top: 17px;
+    margin-bottom: 15px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > p {
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+.container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > span {
+    font-size: 13px;
+}
+
+
+.consultation-modal {
+    font-family: Nunito, sans-serif;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.consultation-modal > div {
+    width: 530px;
+    height: 340px;
+    position: relative;
+    padding: 30px;
+}
+
+.consultation-modal .consultation-modal-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(10, 10, 10);
+}
+
+.consultation-modal select {
+    width: 74px;
+    float: left;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-modal input {
+    width: calc(100% - 74px);
+    float: left;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-modal textarea {
+    margin-top: 10px;
+    min-height: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-modal button {
+    font-family: Mukta, sans-serif;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 13px;
+}
+
+.uk-accordion-content {
+    margin-left: 10px;
+}
+
+.uk-accordion-content > span {
+    margin-bottom: 5px;
+    display: block;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1150px) {
+    .container > .lawyer-details-container {
+        width: 650px;
+        height: 360px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs {
+        height: 40px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button,
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
+        font-size: 1.5rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .abbreviated-information {
+        font-size: 0.75rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .specialization {
+        font-size: 15px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > ul > li {
+        font-size: 14px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .consultation-button {
+        font-size: 0.8rem;
+        bottom: 30px;
+        right: 50px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages {
+        padding: 30px 50px;
+    }
+
+    .description-title {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts {
+        transform: translateY(-48%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .russian-contact {
+        margin-top: 8px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > span {
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > hr {
+        margin-top: 9px;
+        margin-bottom: 7px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > p {
+        font-size: 0.8rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > span {
+        font-size: 11px;
+    }
+
+
+    .uk-accordion-content {
+        margin-top: 14px;
+    }
+
+    .consultation-modal > div {
+        width: 470px;
+        height: 322px;
+        padding: 28px;
+    }
+
+    .consultation-modal .consultation-modal-title {
+        font-size: 23px;
+    }
+
+    .consultation-modal select {
+        width: 70px;
+        font-size: 15px;
+    }
+
+    .consultation-modal input {
+        width: calc(100% - 70px);
+        font-size: 15px;
+    }
+
+    .consultation-modal textarea {
+        margin-top: 9px;
+        min-height: 48px;
+        font-size: 15px;
+    }
+
+    .consultation-modal button {
+        line-height: 34px;
+        height: 34px;
+        font-size: 13px;
+        right: 28px;
+        bottom: 28px;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .container > .lawyer-details-container {
+        width: 550px;
+        height: 350px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs {
+        height: 37px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button,
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
+        font-size: 12px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
+        font-size: 1.4rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .abbreviated-information {
+        font-size: 0.7rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .specialization {
+        font-size: 14px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > ul > li {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .consultation-button {
+        font-size: 0.7rem;
+        bottom: 25px;
+        right: 40px;
+        line-height: 32px;
+        padding: 0 22px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages {
+        padding: 25px 40px;
+    }
+
+    .description-title {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts {
+        transform: translateY(-46%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .russian-contact {
+        margin-top: 7px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > span {
+        font-size: 11px;
+        line-height: normal;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > hr {
+        margin-top: 8px;
+        margin-bottom: 6px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > p {
+        font-size: 0.8rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > span {
+        font-size: 11px;
+    }
+
+    .uk-accordion-content {
+        margin-top: 7px;
+    }
+
+    .consultation-modal > div {
+        width: 450px;
+        height: 308px;
+        padding: 27px;
+    }
+
+    .consultation-modal .consultation-modal-title {
+        font-size: 21px;
+    }
+
+    .consultation-modal select {
+        width: 69px;
+        font-size: 14px;
+    }
+
+    .consultation-modal input {
+        width: calc(100% - 69px);
+        font-size: 14px;
+    }
+
+    .consultation-modal textarea {
+        margin-top: 9px;
+        min-height: 47px;
+        font-size: 14px;
+    }
+
+    .consultation-modal button {
+        line-height: 33px;
+        height: 33px;
+        font-size: 13px;
+        right: 27px;
+        bottom: 27px;
+    }
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    .container > .lawyer-details-container {
+        width: 450px;
+        height: 350px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs {
+        height: 36px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button,
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
+        font-size: 12px;
+        width: 125px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
+        font-size: 1.3rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .abbreviated-information {
+        font-size: 0.7rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .specialization {
+        font-size: 14px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > ul > li {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .consultation-button {
+        width: 210px;
+        font-size: 0.7rem;
+        bottom: 25px;
+        line-height: 32px;
+        padding: 0 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages {
+        padding: 25px 35px;
+    }
+
+    .description-title {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts {
+        transform: translateY(-46%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .russian-contact {
+        margin-top: 7px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > span {
+        font-size: 11px;
+        line-height: normal;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > hr {
+        margin-top: 8px;
+        margin-bottom: 6px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > p {
+        font-size: 0.7rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > span {
+        font-size: 11px;
+    }
+
+    .uk-accordion-content {
+        margin-top: 6px;
+    }
+
+    .consultation-modal > div {
+        width: 430px;
+        height: 295px;
+        padding: 26px;
+    }
+
+    .consultation-modal .consultation-modal-title {
+        font-size: 19px;
+    }
+
+    .consultation-modal select {
+        width: 68px;
+        font-size: 13px;
+    }
+
+    .consultation-modal input {
+        width: calc(100% - 68px);
+        font-size: 13px;
+    }
+
+    .consultation-modal textarea {
+        margin-top: 7px;
+        min-height: 46px;
+        font-size: 13px;
+    }
+
+    .consultation-modal button {
+        line-height: 32px;
+        height: 32px;
+        font-size: 12px;
+        right: 26px;
+        bottom: 26px;
+    }
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    .container > .lawyer-details-container {
+        width: 324px;
+        height: 390px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs {
+        height: 36px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button,
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
+        font-size: 12px;
+        width: 106px;
+        padding: 0;
+        margin-right: 3px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
+        font-size: 1.2rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .abbreviated-information {
+        font-size: 0.65rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .specialization {
+        font-size: 14px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > ul > li {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .consultation-button {
+        width: 210px;
+        font-size: 0.7rem;
+        bottom: 25px;
+        line-height: 32px;
+        padding: 0 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages {
+        padding: 25px 30px;
+    }
+
+    .description-title {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts {
+        transform: translateY(-46%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .russian-contact {
+        margin-top: 7px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > span {
+        font-size: 11px;
+        line-height: normal;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > hr {
+        margin-top: 8px;
+        margin-bottom: 6px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > p {
+        font-size: 0.8rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > span {
+        font-size: 11px;
+    }
+
+    .uk-accordion-content {
+        margin-top: 6px;
+    }
+
+    .consultation-modal > div {
+        width: 410px;
+        height: 285px;
+        padding: 24px;
+    }
+
+    .consultation-modal .consultation-modal-title {
+        font-size: 19px;
+    }
+
+    .consultation-modal select {
+        width: 65px;
+        font-size: 13px;
+    }
+
+    .consultation-modal input {
+        width: calc(100% - 65px);
+        font-size: 13px;
+    }
+
+    .consultation-modal textarea {
+        margin-top: 6px;
+        min-height: 44px;
+        font-size: 13px;
+    }
+
+    .consultation-modal button {
+        line-height: 31px;
+        height: 31px;
+        font-size: 12px;
+        right: 26px;
+        bottom: 26px;
+    }
+}
+
+
+@media only screen and (min-width: 315px) and (max-width: 400px) {
+
+    .container > .lawyer-details-container {
+        width: 285px;
+        height: 450px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs {
+        height: 36px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button,
+    .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
+        font-size: 11px;
+        width: 93px;
+        padding: 0;
+        margin-right: 3px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
+        font-size: 1.2rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .abbreviated-information {
+        font-size: 0.65rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .specialization {
+        font-size: 14px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > ul > li {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .consultation-button {
+        width: 210px;
+        font-size: 0.7rem;
+        bottom: 25px;
+        line-height: 32px;
+        padding: 0 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages {
+        padding: 25px 30px;
+    }
+
+    .description-title {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts {
+        transform: translateY(-47%);
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .russian-contact {
+        margin-top: 10px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > span {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > hr {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > p {
+        font-size: 0.8rem;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-contacts-page > .lawyer-contacts > .developer > span {
+        font-size: 11px;
+    }
+
+    .uk-accordion-content {
+        margin-top: 6px;
+    }
+
+    .consultation-modal > div {
+        width: 305px;
+        height: 275px;
+        padding: 22px;
+    }
+
+    .consultation-modal .consultation-modal-title {
+        font-size: 18px;
+    }
+
+    .consultation-modal select {
+        width: 63px;
+        font-size: 12px;
+    }
+
+    .consultation-modal input {
+        width: calc(100% - 63px);
+        font-size: 12px;
+    }
+
+    .consultation-modal textarea {
+        margin-top: 6px;
+        min-height: 50px;
+        font-size: 12px;
+    }
+
+    .consultation-modal button {
+        line-height: 29px;
+        height: 29px;
+        font-size: 12px;
+        right: 25px;
+        bottom: 25px;
+    }
+}
