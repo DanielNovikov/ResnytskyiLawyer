@@ -58,7 +58,7 @@
 
 .container > .lawyer-details-container > .lawyer-info-container {
     width: 100%;
-    height: calc(100% - 47px);
+    height: calc(100% - 46px);
     float: left;
     background-color: rgb(251, 251, 251);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
@@ -196,7 +196,7 @@
 @media only screen and (min-width: 800px) and (max-width: 1150px) {
     .container > .lawyer-details-container {
         width: 650px;
-        height: 360px;
+        height: 350px;
     }
 
     .container > .lawyer-details-container > .lawyer-details-tabs {
@@ -208,6 +208,10 @@
         font-size: 13px;
     }
 
+    .container > .lawyer-details-container > .lawyer-info-container {
+        height: calc(100% - 39px);
+    }
+        
     .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
         font-size: 1.5rem;
     }
@@ -319,7 +323,7 @@
 @media only screen and (min-width: 600px) and (max-width: 800px) {
     .container > .lawyer-details-container {
         width: 550px;
-        height: 350px;
+        height: 340px;
     }
 
     .container > .lawyer-details-container > .lawyer-details-tabs {
@@ -329,6 +333,10 @@
     .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper.uk-active > .tab-button,
     .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
         font-size: 12px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container {
+        height: calc(100% - 36px);
     }
 
     .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
@@ -442,7 +450,7 @@
 @media only screen and (min-width: 500px) and (max-width: 600px) {
     .container > .lawyer-details-container {
         width: 450px;
-        height: 350px;
+        height: 340px;
     }
 
     .container > .lawyer-details-container > .lawyer-details-tabs {
@@ -453,6 +461,10 @@
     .container > .lawyer-details-container > .lawyer-details-tabs > .tab-button-wrapper > .tab-button {
         font-size: 12px;
         width: 125px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container {
+        height: calc(100% - 35px);
     }
 
     .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
@@ -568,7 +580,7 @@
 @media only screen and (min-width: 400px) and (max-width: 500px) {
     .container > .lawyer-details-container {
         width: 324px;
-        height: 390px;
+        height: 380px;
     }
 
     .container > .lawyer-details-container > .lawyer-details-tabs {
@@ -581,6 +593,10 @@
         width: 106px;
         padding: 0;
         margin-right: 3px;
+    }
+    
+    .container > .lawyer-details-container > .lawyer-info-container {
+        height: calc(100% - 35px);
     }
 
     .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {
@@ -710,6 +726,10 @@
         width: 93px;
         padding: 0;
         margin-right: 3px;
+    }
+
+    .container > .lawyer-details-container > .lawyer-info-container {
+        height: calc(100% - 35px);
     }
 
     .container > .lawyer-details-container > .lawyer-info-container > .lawyer-info-pages > .lawyer-info > .name {

@@ -15,15 +15,25 @@ namespace ResnytskyiLawyer.Controllers
         private const string EmailToUkr = "snitm@ukr.net";
         private const string EmailToRus = "snit@inbox.ru";
 
+        private const string CopyEmailTo = "serbanwot@gmail.com";
+
         [HttpPost]
         public IActionResult Leave([FromBody] LeaveApplicationRequestModel model)
         {
             var emailTo = model.Phone.StartsWith("+380") ? EmailToUkr : EmailToRus;
 
+            SendEmail(emailTo, model.Phone, model.Description);
+            SendEmail(CopyEmailTo, model.Phone, model.Description);
+
+            return Ok();
+        }
+
+        private void SendEmail(string emailTo, string phone, string description)
+        {
             using (var message = new MailMessage(EmailFrom, emailTo))
             {
-                message.Subject = $"Новая заявка с сайта '{model.Phone}'";
-                message.Body = $"Номер телефона: {model.Phone}\nОписание: {model.Description}";
+                message.Subject = $"Новая заявка с сайта '{phone}'";
+                message.Body = $"Номер телефона: {phone}\nОписание: {description}";
 
                 using (var smtp = new SmtpClient())
                 {
@@ -38,8 +48,6 @@ namespace ResnytskyiLawyer.Controllers
                     smtp.Send(message);
                 }
             }
-
-            return Ok();
         }
     }
 }
